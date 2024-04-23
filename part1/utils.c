@@ -69,7 +69,7 @@ int check_password(char *username, char *password_to_check)
     FILE *fp = fopen("pwds.txt", "r");
     if (fp != NULL)
     {
-
+        printf("parsing  file");
         while ((nread = getline(&line, &len, fp)) != -1)
         {
             sscanf(line, "%s %s", read_username, read_password);
