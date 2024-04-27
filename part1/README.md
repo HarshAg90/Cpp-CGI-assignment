@@ -42,3 +42,9 @@ void view_blog(char *blog_name)
 }
 
 ```
+
+## To run the code
+
+``` bash
+gcc prog.c utils.c -o program
+```
