@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Management</title>
+  </head>
+  <body>
+    <h1>Blog Management</h1>
+
+    <h2>Add Blog</h2>
+    <form action="/cgi-bin/blog.cgi" method="POST">
+      <label for="title">Title:</label><br />
+      <input type="text" id="title" name="title" /><br />
+      <label for="content">Content:</label><br />
+      <textarea id="content" name="content" rows="4" cols="50"></textarea><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Show Blogs</h2>
+    <form action="/cgi-bin/blog.cgi" method="GET">
+      <input type="submit" value="Show Blogs" />
+    </form>
+
+    <h2>Delete Blog</h2>
+    <form action="/cgi-bin/blog.cgi" method="DELETE">
+      <label for="index">Index:</label><br />
+      <input type="number" id="index" name="index" /><br />
+      <input type="submit" value="Delete" />
+    </form>
+  </body>
+</html>
